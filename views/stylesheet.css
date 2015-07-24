@@ -30,7 +30,9 @@ div.paragraphs{
    font-family: Georgia, "Times New Roman", serif;
    color: black;
    float: center;
-   width: 300px;
+   width: 1050px;
+   margin: 20px;
+/*   padding:10px; */
   
 }
  
