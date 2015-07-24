@@ -1,7 +1,7 @@
 body { }
 
 div.background {
-    background-color: #FFFF66;
+    background-color: #B6FFCE;
     margin: 20px;
     border-radius: 15px
 }
@@ -29,6 +29,8 @@ div.heading{
 div.paragraphs{
    font-family: Georgia, "Times New Roman", serif;
    color: black;
+   float: right;
+   width: 650;
 /*   text-justify:  */
   
 }
@@ -43,9 +45,19 @@ div.paragraphs{
 } */
 
  .loading-gif {
-    display="inline-block"
+/*     display="inline-block" */
     
    
+}
+
+/* div.image {
+  height:100px;
+  width:50px; 
+/*   margin: auto;
+    width: 60 */
+/*   float: center; */ */
+  
+     
 }
 
 
