@@ -1,0 +1,39 @@
+body { }
+
+div.background {
+    background-color: #FFFF66;
+    margin: 20px;
+    border-radius: 15px
+}
+
+div.text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  
+  
+}
+
+/* div.transbox {
+    margin: 30px;
+    background-color: #E3EAEE;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+} */
+
+ .loading-gif {
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding: 10px;
+    
+   
+}
+
+
+
+  
