@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Final Project</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Fractal Grow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> 
   </head>
   <body>
     <div class="container navbar">
       <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
-
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -33,20 +31,49 @@
                       <a href="examples_page.html">Examples</a>
                   </li>
                   <li>
-                      <a href="create.html">Create</a>
+                      <a href="/create.html">Create</a>
                   </li>
               </ul>
           </div>
         </div>
-      </div>
-      <div>
+     </div>
         <h1>Create your fractal here!</h1>
-          <canvas data-processing-sources="fractal_creator.pde"></canvas>
-      </div>
+        <canvas data-processing-sources="fractal_creator.pde" width="650px" height="650px"></canvas>
+      <canvas id="canvas" width="600" height="500"></canvas>
+ 
+<script type="text/javascript">
+var elem = document.getElementById('canvas');
+var context = elem.getContext('2d');
+ 
+context.fillStyle = '#000';
+context.lineWidth = 1;
+ 
+var deg_to_rad = Math.PI / 180.0;
+var depth = 9;
+ 
+function drawLine(x1, y1, x2, y2, brightness){
+  context.moveTo(x1, y1);
+  context.lineTo(x2, y2);
+}
+ 
+function drawTree(x1, y1, angle, depth){
+  if (depth !== 0){
+    var x2 = x1 + (Math.cos(angle * deg_to_rad) * depth * 10.0);
+    var y2 = y1 + (Math.sin(angle * deg_to_rad) * depth * 10.0);
+    drawLine(x1, y1, x2, y2, depth);
+    drawTree(x2, y2, angle - 20, depth - 1);
+    drawTree(x2, y2, angle + 20, depth - 1);
+  }
+}
+ 
+context.beginPath();
+drawTree(300, 500, -90, depth);
+context.closePath();
+context.stroke(); -->
+<!-- </script>
+ 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-   <div class="container">
-      </div>
     </div>
-  </body>
+      </body>
 </html>
