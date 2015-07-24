@@ -17,6 +17,22 @@ div.text {
   
 }
 
+div.heading{
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+div.paragraphs{
+   font-family: Georgia, "Times New Roman", serif;
+   color: black;
+/*   text-justify:  */
+  
+}
+
 /* div.transbox {
     margin: 30px;
     background-color: #E3EAEE;
