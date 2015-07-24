@@ -29,11 +29,14 @@ div.heading{
 div.paragraphs{
    font-family: Georgia, "Times New Roman", serif;
    color: black;
-   float: right;
-   width: 650;
-/*   text-justify:  */
+   float: center;
+   width: 300px;
   
 }
+ 
+/*   text-justify:  */
+  
+
 
 /* div.transbox {
     margin: 30px;
@@ -50,15 +53,6 @@ div.paragraphs{
    
 }
 
-/* div.image {
-  height:100px;
-  width:50px; 
-/*   margin: auto;
-    width: 60 */
-/*   float: center; */ */
-  
-     
-}
 
 
 

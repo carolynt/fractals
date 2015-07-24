@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fractal Grow</title>
+
+    <title>Final Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
@@ -35,18 +36,28 @@
                   <li>
                       <a href="examples.html">Examples</a>
                   </li>
-                  <li>
-                      <a href="create.html">Create</a>
-                  </li>
-              </ul>
+                </div>
+            <div>
+              <div>
+                  <ul class="nav navbar-nav">
+<!--                     <li class="active"><a href="create.html">Create</a></li> -->
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="create.html">Create
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="square_fractal.pde">Square Fractal</a></li>
+                        <li><a href="dragon_curve.pde">Dragon Curve</a></li>
+                        <li><a href="fractal_tree">Fractal Tree</a></li> 
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
           </div>
         </div>
       </div>
       <div class="text">
-        <h2>Grow your fractal here!</h2>
-<!--         <canvas data-processing-sources="square_fractal.pde"></canvas> -->
-        <canvas data-processing-sources="dragon_curve.pde"></canvas>
-<!--         <canvas data-processing-sources="fractal_tree.pde"></canvas> -->
+        <h2>Creating a fractal</h2>
+          <img src="http://aziarts.com/air/Resource%20Pics/fractals/Koch-curve.jpg">
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
