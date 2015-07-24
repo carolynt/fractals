@@ -1,9 +1,10 @@
-float theta;   
+ 
 
 void setup() {
   size(640, 360);
 }
-
+float theta;  
+void draw() {
 void draw() {
   background(0);
   frameRate(30);
@@ -46,77 +47,78 @@ void branch(float h) {
     popMatrix();
   }
 }
-// var x;
-// var y;
-// var a;
-// var b;
+var x;
+var y;
+var a;
+var b;
 
-// x=0;y=0;a=0;b=0;
+x=0;y=0;a=0;b=0;
 
-// var iterate=function(){
-//     var tmp=x*x-y*y+a;
-//     y=2*x*y+b;
-//     x=tmp;  
-// };
+var iterate=function(){
+    var tmp=x*x-y*y+a;
+    y=2*x*y+b;
+    x=tmp;  
+};
 
-// var iterateABunch=function(n){
-//     for(var i=0;i<n;i++){
-//         iterate();
-//     }
-// };
+var iterateABunch=function(n){
+    for(var i=0;i<n;i++){
+        iterate();
+    }
+};
 
-// var drawXY=function(){
-//     point(200+x*100,200-y*100);
-// };
-// var drawAB=function(){
-//     point(200+a*100,200-b*100);
-// };
+var drawXY=function(){
+    point(200+x*100,200-y*100);
+};
+var drawAB=function(){
+    point(200+a*100,200-b*100);
+};
 
-// var iterateAndDraw=function(n){
-//     for(var i=0;i<n;i++){
-//         iterate();
-//         drawXY();
-//     }
+var iterateAndDraw=function(n){
+    for(var i=0;i<n;i++){
+        iterate();
+        drawXY();
+    }
     
-// };
-// var seriesDiverges=function(n){
-//     for(var i=0;i<n;i++){
-//         iterate();
-//         if(x*x+y*y>4.0){
-//             return true;
-//         }
-//     }
-//     return false;
-// };
+};
+var seriesDiverges=function(n){
+    for(var i=0;i<n;i++){
+        iterate();
+        if(x*x+y*y>4.0){
+            return true;
+        }
+    }
+    return false;
+};
 
 
-// textSize(20);
-// fill(0, 0, 0);
+textSize(20);
+fill(0, 0, 0);
 
-// var textXY=function(xpos,ypos){
-//     text("("+x+", "+y+")",xpos,ypos);
-// };
+var textXY=function(xpos,ypos){
+    text("("+x+", "+y+")",xpos,ypos);
+};
 
 
-// a=-2;
-// b=-2;
+a=-2;
+b=-2;
 
-// var stillDrawing=true;
-// var draw= function() {
-//     if(stillDrawing){
-//         for(var i=0;i<100;i++){
-//             a=a+0.01;
-//             if(a>=2){
-//                 a=-2;
-//                 b+=0.01;
-//             }
-//             if(b>=2){
-//                 stillDrawing=false;
-//             }
-//             x=0;y=0;
-//             if(seriesDiverges(40)){
-//                 drawAB();
-//             }
-//         }
-//     }
-// };
+var stillDrawing=true;
+var draw= function() {
+    if(stillDrawing){
+        for(var i=0;i<100;i++){
+            a=a+0.01;
+            if(a>=2){
+                a=-2;
+                b+=0.01;
+            }
+            if(b>=2){
+                stillDrawing=false;
+            }
+            x=0;y=0;
+            if(seriesDiverges(40)){
+                drawAB();
+            }
+        }
+    }
+}
+};
