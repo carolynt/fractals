@@ -29,8 +29,8 @@ div.heading{
 div.paragraphs{
    font-family: Georgia, "Times New Roman", serif;
    color: black;
-   float: center;
-   width: 800px;
+   float: right;
+   width: 650;
 /*   text-justify:  */
   
 }
@@ -48,6 +48,16 @@ div.paragraphs{
 /*     display="inline-block" */
     
    
+}
+
+/* div.image {
+  height:100px;
+  width:50px; 
+/*   margin: auto;
+    width: 60 */
+/*   float: center; */ */
+  
+     
 }
 
 
